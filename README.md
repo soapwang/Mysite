@@ -1,0 +1,2 @@
+# Mysite
+Django website practice

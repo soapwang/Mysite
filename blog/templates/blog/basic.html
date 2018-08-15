@@ -1,0 +1,20 @@
+{% extends "blog/header.html" %}
+{% block nav_home %}
+	<li class="nav-item">
+{% endblock %}	
+
+{% block nav_blog %}
+	<li class="nav-item">
+{% endblock %}	
+
+{% block nav_about %}
+	<li class="nav-item active">
+{% endblock %}	
+
+{% block content %}
+
+	{% for c in contact_content %}
+		<p class="lead">{{c}}</p>
+	{% endfor %}
+
+{% endblock %}	

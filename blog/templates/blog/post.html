@@ -1,0 +1,22 @@
+{% extends "blog/header.html" %}
+{% block nav_home %}
+	<li class="nav-item">
+{% endblock %}	
+
+
+{% block nav_blog %}
+	<li class="nav-item active">
+{% endblock %}	
+
+{% block nav_about %}
+	<li class="nav-item">
+{% endblock %}	
+
+
+{% block content %}
+	<br>
+	<h3>{{post.title}}</h3>
+	<p>on {{post.date}}</p>
+	{{post.body|safe|linebreaks}}
+	<p><a href="/blog">Back to blog</a></p>
+{% endblock %}	
